@@ -1,0 +1,9 @@
+
+test:
+	rsync -av /home/fsky/test/content/. /var/www/beta.test-ipv6.com/. --exclude site --delete
+	
+stable:
+	rsync -av /home/fsky/stable/content/. jfesler@test-ipv6.com:/var/www/. --exclude site --delete
+
+justme:
+	rsync -av ../source/work/. jfesler@test-ipv6.com:/var/www/. --exclude site --delete
